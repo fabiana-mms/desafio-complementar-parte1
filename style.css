@@ -1,0 +1,291 @@
+* {
+   font-family: 'Roboto Mono', monospace;
+   margin: 0;
+}
+
+.desafio1 {
+   color: darkorange;
+   background-color: darkgreen;
+}
+
+#lista1 {
+   color: #1f3d99;
+   background-color: #ffff99;
+   list-style: square;
+   margin: 10px;
+}
+
+#lista2 {
+   color: #1f3d99;
+   background-color: #fae6fa;
+   list-style: upper-roman;
+   margin: 10px;
+}
+
+.caixa-css {
+   border: 1px solid black;
+   display: inline-block;
+   font-size: 32px;
+   width: 100px;
+   height: 140px;
+   overflow: hidden;
+   padding: 10px;
+   margin: 20px;
+}
+
+.texto-qualquer {
+   width: 300px;
+   height: 300px;
+   border-style: dotted;
+   margin: 5px 8px;
+   padding: 6px 9px;
+   overflow: scroll;
+}
+
+.paragrafo {
+   margin: 20px;
+}
+
+p {
+   display: inline;
+}
+
+span {
+   display: block;
+}
+
+.hover {
+   margin: 20px;
+}
+
+.hover:hover {
+   margin: 10px;
+   color:red
+}
+
+.link-google:active {
+   color: darkgreen;
+}
+
+.link-google:visited {
+   color: blue;
+}
+
+.link-google:focus {
+   background-color: burlywood;
+}
+
+.itens:first-child {
+   color: pink;
+}
+
+.itens:last-child {
+   color: red;
+}
+
+.itens:nth-child(3) {
+   color: blueviolet;
+}
+
+.lista-ordenada :first-of-type {
+   color: chocolate;
+}
+
+.lista-ordenada :last-of-type {
+   color: cornflowerblue;
+}
+
+.lista-ordenada :nth-of-type(4) {
+   color: deeppink;
+}
+
+/*.lista-ordenada :not(.lista-ordenada) {
+   color: gold;
+}*/
+
+option:checked {
+   color: crimson;
+}
+
+option:disabled {
+   background-color: grey;
+}
+
+input[type=email]:invalid {
+   background: red;
+}
+
+/*input[type=email]:valid {
+   background: turquoise;
+}*/
+
+input:required {
+   background: #ffff99;
+}
+
+.itens {
+   list-style: none;
+}
+
+.itens::before {
+   content: '🡆 ';
+   color: rgb(0, 102, 255);
+}
+
+.itens::after {
+   content: ' ✿';
+   color: #f8d510;
+}
+
+.texto-letter::first-letter {
+   font-size: 20px;
+   color: blueviolet;
+}
+
+.texto-letter::selection {
+   color: #f8d510;
+   background-color: blueviolet;
+}
+
+.marker::marker {
+   color: darkmagenta;
+   font-size: 30px;
+}
+
+.email::placeholder {
+   color: rgb(18, 206, 18);
+}
+
+.quadrado-bottom {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(to bottom, purple, yellow);
+   transform: translate(10px, 20px);
+}
+
+.quadrado-left {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(to left, blue, green);
+   transform: rotate(45deg);
+}
+
+.quadrado-right {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(to right, red, orange);
+   transform: rotateX(60deg);
+}
+
+.quadrado-top {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(to top, grey, black);
+   transform: rotateY(60deg);
+}
+
+.quadrado-deg {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(45deg, green, magenta);
+   transform: rotateZ(60deg);
+}
+
+.quadrado-radial {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: radial-gradient(yellow, blue);
+}
+
+.quadrado-height {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-color: blue;
+}
+
+.quadrado-height:hover {
+   height: 200px;
+}
+
+.quadrado-height-width {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-color: magenta;
+}
+
+.quadrado-height-width:hover {
+   height: 200px;
+   width: 200px;
+}
+
+.quadrado-height-width-color {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-color: yellowgreen;
+}
+
+.quadrado-height-width-color:hover {
+   height: 200px;
+   width: 200px;
+   padding: 20px;
+   background-color: #f8d510;
+}
+
+.email {
+   width: 200px;
+   height: 30px;
+   transition: all 2s;
+}
+
+.email:focus {
+   width: 300px;
+   font-size: 20px;
+}
+
+.quadrado-bottom-animation {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px 30px;
+   background-image: linear-gradient(to bottom, purple, yellow);
+   animation-name: aparecer;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
